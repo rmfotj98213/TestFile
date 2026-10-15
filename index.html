@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20년차 마스터 그릴러 - 궁극의 그릴링 & 시즈닝 가이드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        body { font-family: 'Pretendard', sans-serif; }
+        
+        /* 세련된 CSS 패턴/그라데이션 (이미지 대체) */
+        .hero-pattern {
+            background: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.95)), 
+                        radial-gradient(circle at center, #3f3f46 0%, #18181b 100%);
+        }
+        .beef-img { background: linear-gradient(135deg, #7f1d1d, #450a0a); }
+        .pork-img { background: linear-gradient(135deg, #b45309, #78350f); }
+        .chicken-img { background: linear-gradient(135deg, #d97706, #92400e); }
+        .lamb-img { background: linear-gradient(135deg, #581c87, #3b0764); }
+        
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-amber-500 font-bold text-xl tracking-wider">MASTER GRILLER</div>
+            <div class="space-x-6 text-sm font-medium hidden md:block">
+                <a href="#beef" class="hover:text-amber-500 transition">소고기</a>
+                <a href="#pork" class="hover:text-amber-500 transition">돼지고기</a>
+                <a href="#chicken" class="hover:text-amber-500 transition">닭고기</a>
+                <a href="#lamb" class="hover:text-amber-500 transition">양고기</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern min-h-screen flex items-center justify-center pt-20">
+        <div class="text-center px-6 max-w-4xl">
+            <div class="inline-block px-4 py-1.5 rounded-full border border-amber-500/30 text-amber-500 text-sm font-semibold mb-6">
+                20 YEARS OF EXCELLENCE
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                불과 시간의 예술,<br>완벽한 <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-600">그릴링의 세계</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-12 leading-relaxed">
+                20년의 현장 경험이 집약된 육류별 최적의 시즈닝과 굽기 기술.<br class="hidden md:block">
+                당신의 미각을 깨울 하이엔드 그릴링 마스터클래스에 초대합니다.
+            </p>
+            <a href="#beef" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-amber-600 hover:bg-amber-700 rounded-lg transition duration-300">
+                기술 탐구 시작하기 <i class="fa-solid fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-24 space-y-32">
+
+        <!-- 1. 소고기 (Beef) -->
+        <section id="beef" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="beef-img h-96 rounded-2xl flex items-center justify-center shadow-2xl shadow-red-900/20 relative overflow-hidden">
+                    <i class="fa-solid fa-cow text-7xl text-white/20 absolute"></i>
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <h3 class="z-10 text-3xl font-bold text-white tracking-widest uppercase">BEEF</h3>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-4"><span class="text-red-500">소고기</span>의 미학 (Beef)</h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <strong class="text-gray-200">철학: "마이야르 반응의 극대화와 레스팅"</strong><br>
+                        강력한 숯불(혹은 무쇠팬)에서 겉면에 완벽한 크러스트를 형성하고, 섬세한 레스팅을 통해 내부의 육즙을 가두는 것이 핵심입니다. 원육 본연의 맛을 가리지 않는 절제된 시즈닝이 중요합니다.
+                    </p>
+                    
+                    <div class="bg-gray-800 rounded-xl p-6 mb-6">
+                        <h4 class="text-amber-500 font-bold mb-4 flex items-center"><i class="fa-solid fa-medal mr-2"></i> 추천 조합 TOP 3</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">새우살 (Ribeye Cap)</span> + 훈연 말돈 소금</div>
+                                <div class="text-sm text-gray-400">₩100,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">샤토브리앙 (안심)</span> + 트러플 버터 & 굵은 흑후추</div>
+                                <div class="text-sm text-gray-400">₩150,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div><span class="font-bold text-gray-200">채끝 등심 (Striploin)</span> + 생 고추냉이 & 치미추리</div>
+                                <div class="text-sm text-gray-400">₩70,000~ / 1인</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex items-center text-sm text-gray-300 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                        <i class="fa-solid fa-map-location-dot text-amber-500 text-xl mr-4"></i>
+                        <div>
+                            <span class="block font-bold text-white mb-1">마스터의 추천 명소: 본앤브레드 (마장동)</span>
+                            세계적인 수준의 한우 오마카세를 경험할 수 있는 곳. 그릴링의 교과서.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 돼지고기 (Pork) -->
+        <section id="pork" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-4xl font-bold text-white mb-4"><span class="text-orange-500">돼지고기</span>의 진수 (Pork)</h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <strong class="text-gray-200">철학: "지방의 렌더링과 숯향의 코팅"</strong><br>
+                        돼지고기 그릴링은 두터운 지방을 천천히 녹여내어 고소함을 극대화(Rendering)하는 과정입니다. 숯불에 떨어지는 기름이 만들어내는 훈연 향을 고기에 고스란히 입히는 스킬이 요구됩니다.
+                    </p>
+                    
+                    <div class="bg-gray-800 rounded-xl p-6 mb-6">
+                        <h4 class="text-amber-500 font-bold mb-4 flex items-center"><i class="fa-solid fa-medal mr-2"></i> 추천 조합 TOP 3</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">숙성 뼈삼겹 (Bone-in Belly)</span> + 제주산 멜젓</div>
+                                <div class="text-sm text-gray-400">₩25,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">두툼한 목살 (Pork Neck)</span> + 안데스 호수 소금 & 명이나물</div>
+                                <div class="text-sm text-gray-400">₩20,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div><span class="font-bold text-gray-200">통 항정살 (Jowl)</span> + 영국식 머스타드 & 유자청</div>
+                                <div class="text-sm text-gray-400">₩30,000~ / 1인</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex items-center text-sm text-gray-300 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                        <i class="fa-solid fa-map-location-dot text-amber-500 text-xl mr-4"></i>
+                        <div>
+                            <span class="block font-bold text-white mb-1">마스터의 추천 명소: 금돼지식당 (신당동)</span>
+                            미슐랭 빕구르망 선정. 연탄불 특유의 화력 제어와 뛰어난 원육의 밸런스.
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 pork-img h-96 rounded-2xl flex items-center justify-center shadow-2xl shadow-orange-900/20 relative overflow-hidden">
+                    <i class="fa-solid fa-piggy-bank text-7xl text-white/20 absolute"></i>
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <h3 class="z-10 text-3xl font-bold text-white tracking-widest uppercase">PORK</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 닭고기 (Chicken) -->
+        <section id="chicken" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="chicken-img h-96 rounded-2xl flex items-center justify-center shadow-2xl shadow-yellow-900/20 relative overflow-hidden">
+                    <i class="fa-solid fa-drumstick-bite text-7xl text-white/20 absolute"></i>
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <h3 class="z-10 text-3xl font-bold text-white tracking-widest uppercase">CHICKEN</h3>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-white mb-4"><span class="text-yellow-500">닭고기</span>의 재발견 (Chicken)</h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <strong class="text-gray-200">철학: "껍질은 크리스피하게, 속살은 촉촉하게"</strong><br>
+                        닭고기는 부위별 익는 속도와 지방 함량이 완전히 다릅니다. 껍질부터 바삭하게 구워내어 고소한 기름을 뽑아내고, 속살은 잔열로 익혀 수비드한 듯 부드러운 텍스처를 살려냅니다.
+                    </p>
+                    
+                    <div class="bg-gray-800 rounded-xl p-6 mb-6">
+                        <h4 class="text-amber-500 font-bold mb-4 flex items-center"><i class="fa-solid fa-medal mr-2"></i> 추천 조합 TOP 3</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">닭다리살 정육 (Thigh)</span> + 스모크 파프리카 & 갈릭 럽</div>
+                                <div class="text-sm text-gray-400">₩18,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">닭 목살 (Neck)</span> + 천일염 & 유즈코쇼(유자고추)</div>
+                                <div class="text-sm text-gray-400">₩20,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div><span class="font-bold text-gray-200">가슴연골 (야겐난코츠)</span> + 달콤짭짤한 타레 소스</div>
+                                <div class="text-sm text-gray-400">₩15,000~ / 1인</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex items-center text-sm text-gray-300 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                        <i class="fa-solid fa-map-location-dot text-amber-500 text-xl mr-4"></i>
+                        <div>
+                            <span class="block font-bold text-white mb-1">마스터의 추천 명소: 송계옥 (방이/성수)</span>
+                            닭 특수부위 숯불구이의 트렌드를 이끄는 곳. 완벽한 그릴링 서비스를 제공.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 양고기 (Lamb) -->
+        <section id="lamb" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-4xl font-bold text-white mb-4"><span class="text-purple-400">양고기</span>의 향연 (Lamb)</h2>
+                    <p class="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <strong class="text-gray-200">철학: "육향의 승화와 스파이스의 조화"</strong><br>
+                        양고기는 특유의 향을 기분 좋은 풍미로 승화시키는 것이 장인의 기술입니다. 강한 직화로 겉면을 빠르게 시어링하고, 큐민, 로즈마리 등 허브와 향신료를 더해 이국적인 감칠맛을 완성합니다.
+                    </p>
+                    
+                    <div class="bg-gray-800 rounded-xl p-6 mb-6">
+                        <h4 class="text-amber-500 font-bold mb-4 flex items-center"><i class="fa-solid fa-medal mr-2"></i> 추천 조합 TOP 3</h4>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">프렌치 랙 (French Rack)</span> + 쯔란(큐민) & 코리앤더 씨드</div>
+                                <div class="text-sm text-gray-400">₩45,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-gray-700 pb-2">
+                                <div><span class="font-bold text-gray-200">양갈비 / 숄더 랙</span> + 민트 젤리 & 구운 대파</div>
+                                <div class="text-sm text-gray-400">₩35,000~ / 1인</div>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div><span class="font-bold text-gray-200">양 등심 (Loin)</span> + 갈릭 로즈마리 버터 베이스팅</div>
+                                <div class="text-sm text-gray-400">₩40,000~ / 1인</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex items-center text-sm text-gray-300 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                        <i class="fa-solid fa-map-location-dot text-amber-500 text-xl mr-4"></i>
+                        <div>
+                            <span class="block font-bold text-white mb-1">마스터의 추천 명소: 이치류 (홍대 본점)</span>
+                            한국 최초의 정통 징기스칸 숯불 양고기. 비장탄과 철제 투구 불판의 완벽한 조화.
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 lamb-img h-96 rounded-2xl flex items-center justify-center shadow-2xl shadow-purple-900/20 relative overflow-hidden">
+                    <i class="fa-solid fa-sheep text-7xl text-white/20 absolute"></i>
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <h3 class="z-10 text-3xl font-bold text-white tracking-widest uppercase">LAMB</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-12 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Master Griller. All rights reserved.</p>
+        <p class="mt-2">고기의 맛은 원육 50%, 굽는 이의 정성 50%로 완성됩니다.</p>
+    </footer>
+
+</body>
+</html>
+```eof
